@@ -1,0 +1,41 @@
+{
+  "model": {
+    "parameters": 8819456,
+    "vocab_size": 16000,
+    "architecture": "GPT with RoPE + RMSNorm + SwiGLU + Weight Tying",
+    "training_corpus_mb": 53.8
+  },
+  "evaluation": {
+    "test_loss": 3.8079,
+    "test_perplexity": 45.06,
+    "financial_knowledge_accuracy": 0.375,
+    "vocab_diversity": 0.6262,
+    "repetition_rate": 0.1076
+  },
+  "generation_samples": [
+    {
+      "prompt": "Revenue grew 23% year over year",
+      "completion": "Revenue grew 23% year over year. But while the Company's profit rose 20% year-over-year by 2.9% as compared to the prior year, the S&P 500 closed down 6.2% by 6.5% and 2.4% as compared to the third quarter of 2016. On the full"
+    },
+    {
+      "prompt": "The company reported strong quarterly results",
+      "completion": "The company reported strong quarterly results and were well adjusted for the fourth quarter of 2017 compared to net income of $337,000, or $0.19 per common share, for the fourth quarter of 2016 compared to net income of $11.6 million, or $0.06 per diluted share, in the fourth quarter"
+    },
+    {
+      "prompt": "Free cash flow was",
+      "completion": "Free cash flow was 2.7% for the year. This was a pretty good start.\n\nFor a new year, it was at 2.5% a year ago, but it was still almost a year ago. It would be a great one. For 2 months, you would have had a strong return"
+    },
+    {
+      "prompt": "Earnings per share increased to",
+      "completion": "Earnings per share increased to $3.7 million, or $1.04 per diluted share, compared to $5.1 million for the previous quarter, and $2.2 million for the fourth quarter of 2016, respectively, by the third quarter of 2017.\nFor a range of products and services, adjusted net"
+    },
+    {
+      "prompt": "We are raising full-year guidance",
+      "completion": "We are raising full-year guidance on 2018. The current fiscal 2018 financial results are expected to be on the December 31, 2018 day after the close of the market on Dec. 9. U.S. stock-backed securities trading on the New York Stock Exchange, which is set to report earnings and results from operations and earnings."
+    },
+    {
+      "prompt": "The stock market experienced",
+      "completion": "The stock market experienced an over-explacing of real estate, a potential for sale or sale of property, and a $100 million investment in a diversified portfolio of real estate equity. The number of investors and other institutional investors in the bank have a very good idea of buying or selling money and buying a high-"
+    }
+  ]
+}

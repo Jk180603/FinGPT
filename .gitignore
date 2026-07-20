@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+.env
+data/raw/
+data/processed/
+model/checkpoints/
+mlruns/
+*.npy
+*.pt
+*.log
+.DS_Store
+mlflow.db

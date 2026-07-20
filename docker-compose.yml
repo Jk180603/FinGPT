@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./model:/app/model
+      - ./tokenizer:/app/tokenizer
+    environment:
+      - DEVICE=cpu
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  dashboard:
+    build: .
+    command: streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./model:/app/model
+      - ./tokenizer:/app/tokenizer
+    depends_on:
+      - api
+
+  evaluate:
+    build: .
+    command: python evaluation/evaluate.py
+    volumes:
+      - ./model:/app/model
+      - ./tokenizer:/app/tokenizer
+      - ./data:/app/data
+    profiles:
+      - eval

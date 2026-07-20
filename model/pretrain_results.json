@@ -1,0 +1,9 @@
+{
+  "best_val_loss": 3.9158515334129333,
+  "best_val_perplexity": 50.191793307993336,
+  "total_steps": 7895,
+  "total_tokens_trained": 64675840,
+  "model_parameters": 8819456,
+  "resumed_from": 6000,
+  "architecture": "GPT with RoPE + RMSNorm + SwiGLU"
+}
